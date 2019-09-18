@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkDate(str) {
+        regexp=/^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$/;
+        if (regexp.test(str)) return true;
+        return false
+    }
+    let date="15/09/1994";
+    console.log(checkDate(date));
+    date="aa/21/1979";
+    console.log(checkDate(date));
+    date="1219/21/1979";
+    console.log(checkDate(date));
+
+</script>
+
+
+</body>
+</html>
