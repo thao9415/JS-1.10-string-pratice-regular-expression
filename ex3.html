@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function count(str) {
+        let regexpVowel = /[ueoai]/ig;
+        let regexpSpace=/[ ]/ig;
+
+        let resultVowel = str.match(regexpVowel);
+        let resultSpace = str.match(regexpSpace);
+
+        let countVowel = resultVowel.length;
+        let countSpace = resultSpace.length;
+
+        a=str.length-resultVowel.length-resultSpace.length;
+        alert("Số nguyên âm = "+countVowel+"\n"+"Số phụ âm = "+a);
+    }
+
+
+    let str1 = "ho vat Eneee";
+    count(str1);
+
+</script>
+</body>
+</html>
